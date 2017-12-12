@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <!-- 引入配置文件 -->  
+    <properties resource="application-default.properties"/>
+    <!-- 数据库驱动 -->
+    <!--<classPathEntry  location="lib/mysql-connector-java-5.1.34.jar"/>-->
+    <context id="DB2Tables" targetRuntime="MyBatis3">
+
+        <!--<plugin type="plugin.SelectByPagePlugin" />-->
+        <plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin"/>
+        <!--<plugin type="org.mybatis.generator.plugins.RenameExampleClassPlugin">-->
+        <!--<property name="searchString" value="Example$" />-->
+        <!--<property name="replaceString" value="Criteria" />-->
+        <!--</plugin>-->
+
+        <!-- 注释 -->  
+        <commentGenerator>
+            <property name="suppressAllComments" value="false"/><!-- 是否取消注释 -->  
+        </commentGenerator>
+        <!-- jdbc连接 -->  
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="${spring.datasource.url}"
+                        userId="${spring.datasource.username}" password="${spring.datasource.password}">
+        </jdbcConnection>
+        <!-- 类型转换 -->  
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <!-- 生成实体类地址 -->    
+        <javaModelGenerator targetPackage="com.my.blog.website.model.Vo"
+                            targetProject="my-blog">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+            <property name="javaExampleTargetPackage" value="com.my.blog.website.model.Vo"/>
+            <property name="javaExampleTargetProject" value="src/main/java"/>
+        </javaModelGenerator>
+
+        <!-- 生成映射文件的包名和位置-->
+        <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+        <!-- 生成DAO的包名和位置-->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.my.blog.website.dao"
+                             targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+        <!-- 要生成哪些表-->
+        <table tableName="bench_batch_recharge_info">
+            <generatedKey column="id" sqlStatement="Mysql" type="post" identity="true"/>
+            <!-- 枚举类-->
+            <columnOverride column="exchange_status" javaType="com.ruowei.common.util.enums.channel.ChargeStatusEnum"/>
+            <columnOverride column="belong_type" javaType="com.ruowei.common.util.enums.MNOTypeEnum"/>
+        </table>
+
+
+
+    </context>
+</generatorConfiguration>
