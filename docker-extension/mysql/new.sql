@@ -31,3 +31,19 @@ CREATE TABLE `user_info` (
   KEY `idx_phone_number` (`phone_number`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1207968 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin COMMENT='用户表';
 
+CREATE TABLE `news_info` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+  `tittle` varchar(128) DEFAULT NULL COMMENT '商品名称',
+  `pic_url` varchar(500) DEFAULT NULL COMMENT '大图url（多个用逗号隔开）',
+  `logoPicUrl` varchar(500) DEFAULT NULL COMMENT '图标url',
+  `desc` longtext COMMENT '详情()',
+  `read_number` int(11) DEFAULT NULL COMMENT '阅读数量',
+  `source` varchar(100) DEFAULT NULL COMMENT '来源',
+  `status` tinyint(4) DEFAULT NULL COMMENT '状态（0启用、1停用）',
+  `recommend_status` tinyint(4) DEFAULT NULL COMMENT '推荐状态(0不推荐,1推荐)',
+  `type` varchar(100) DEFAULT NULL COMMENT '类型(村镇服务,政务头条)',
+  `create_time` datetime DEFAULT NULL COMMENT '系统创建时间',
+  `update_time` datetime DEFAULT NULL COMMENT '系统修改时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC KEY_BLOCK_SIZE=4 COMMENT='新闻信息表';
+
