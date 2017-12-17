@@ -47,3 +47,38 @@ CREATE TABLE `news_info` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC KEY_BLOCK_SIZE=4 COMMENT='新闻信息表';
 
+
+CREATE TABLE `comments_info` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+  `tittle` varchar(128) DEFAULT NULL COMMENT '标题名称',
+  `desc` longtext COMMENT '详情()',
+  `user_id` bigint(20) DEFAULT NULL COMMENT '用户id',
+  `pic_url` varchar(500) DEFAULT NULL COMMENT '大图url（多个用逗号隔开）',
+  `approve_number` int(11) DEFAULT NULL COMMENT '点赞数量',
+  `not_approve_number` int(11) DEFAULT NULL COMMENT '点踩数量',
+  `comments_number` int(11) DEFAULT NULL COMMENT '评论数量',
+  `redirect_number` int(11) DEFAULT NULL COMMENT '转发数量',
+  `type` tinyint(4) DEFAULT NULL COMMENT '类型(新闻评论 朋友圈评论)',
+  `father_id` bigint(20) NOT NULL COMMENT '父级评论（如果为0取type）',
+  `status` tinyint(4) DEFAULT NULL COMMENT '状态（0未删除、1删除）',
+  `create_time` datetime DEFAULT NULL COMMENT '系统创建时间',
+  `update_time` datetime DEFAULT NULL COMMENT '系统修改时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC KEY_BLOCK_SIZE=4 COMMENT='评论表';
+
+CREATE TABLE `second_hand_info` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+  `tittle` varchar(128) DEFAULT NULL COMMENT '商品标题',
+  `pic_url` varchar(500) DEFAULT NULL COMMENT '大图url（多个用逗号隔开）',
+  `logoPicUrl` varchar(500) DEFAULT NULL COMMENT '图标url',
+  `user_id` bigint(20) DEFAULT NULL COMMENT '用户id',
+  `desc` longtext COMMENT '详情()',
+  `read_number` int(11) DEFAULT NULL COMMENT '阅读数量',
+  `status` tinyint(4) DEFAULT NULL COMMENT '状态（0未删除、1删除）',
+  `recommend_status` tinyint(4) DEFAULT NULL COMMENT '展示状态(0展示,1不展示)',
+  `type` bigint(20) DEFAULT NULL COMMENT '关联second_hand_type表',
+  `create_time` datetime DEFAULT NULL COMMENT '系统创建时间',
+  `update_time` datetime DEFAULT NULL COMMENT '系统修改时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC KEY_BLOCK_SIZE=4 COMMENT='二手物品表';
+
