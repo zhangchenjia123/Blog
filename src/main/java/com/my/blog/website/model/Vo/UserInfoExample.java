@@ -1,5 +1,8 @@
 package com.my.blog.website.model.Vo;
 
+import com.my.blog.website.Enum.BelongTypeEnum;
+import com.my.blog.website.Enum.DeviceTypeEnum;
+import com.my.blog.website.Enum.SourceEnum;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
@@ -11,14 +14,10 @@ public class UserInfoExample {
      * This field corresponds to the database table user_info
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     protected String orderByClause;
 
@@ -27,14 +26,10 @@ public class UserInfoExample {
      * This field corresponds to the database table user_info
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     protected boolean distinct;
 
@@ -43,14 +38,10 @@ public class UserInfoExample {
      * This field corresponds to the database table user_info
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     protected List<Criteria> oredCriteria;
 
@@ -59,14 +50,10 @@ public class UserInfoExample {
      * This method corresponds to the database table user_info
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public UserInfoExample() {
         oredCriteria = new ArrayList<Criteria>();
@@ -77,14 +64,10 @@ public class UserInfoExample {
      * This method corresponds to the database table user_info
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public void setOrderByClause(String orderByClause) {
         this.orderByClause = orderByClause;
@@ -95,14 +78,10 @@ public class UserInfoExample {
      * This method corresponds to the database table user_info
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public String getOrderByClause() {
         return orderByClause;
@@ -113,14 +92,10 @@ public class UserInfoExample {
      * This method corresponds to the database table user_info
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public void setDistinct(boolean distinct) {
         this.distinct = distinct;
@@ -131,14 +106,10 @@ public class UserInfoExample {
      * This method corresponds to the database table user_info
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public boolean isDistinct() {
         return distinct;
@@ -149,14 +120,10 @@ public class UserInfoExample {
      * This method corresponds to the database table user_info
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public List<Criteria> getOredCriteria() {
         return oredCriteria;
@@ -167,14 +134,10 @@ public class UserInfoExample {
      * This method corresponds to the database table user_info
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public void or(Criteria criteria) {
         oredCriteria.add(criteria);
@@ -185,14 +148,10 @@ public class UserInfoExample {
      * This method corresponds to the database table user_info
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public Criteria or() {
         Criteria criteria = createCriteriaInternal();
@@ -205,14 +164,10 @@ public class UserInfoExample {
      * This method corresponds to the database table user_info
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public Criteria createCriteria() {
         Criteria criteria = createCriteriaInternal();
@@ -227,14 +182,10 @@ public class UserInfoExample {
      * This method corresponds to the database table user_info
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     protected Criteria createCriteriaInternal() {
         Criteria criteria = new Criteria();
@@ -246,14 +197,10 @@ public class UserInfoExample {
      * This method corresponds to the database table user_info
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public void clear() {
         oredCriteria.clear();
@@ -266,14 +213,10 @@ public class UserInfoExample {
      * This class corresponds to the database table user_info
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     protected abstract static class GeneratedCriteria {
         protected List<Criterion> criteria;
@@ -1006,52 +949,52 @@ public class UserInfoExample {
             return (Criteria) this;
         }
 
-        public Criteria andRegisterSourceEqualTo(Byte value) {
+        public Criteria andRegisterSourceEqualTo(SourceEnum value) {
             addCriterion("register_source =", value, "registerSource");
             return (Criteria) this;
         }
 
-        public Criteria andRegisterSourceNotEqualTo(Byte value) {
+        public Criteria andRegisterSourceNotEqualTo(SourceEnum value) {
             addCriterion("register_source <>", value, "registerSource");
             return (Criteria) this;
         }
 
-        public Criteria andRegisterSourceGreaterThan(Byte value) {
+        public Criteria andRegisterSourceGreaterThan(SourceEnum value) {
             addCriterion("register_source >", value, "registerSource");
             return (Criteria) this;
         }
 
-        public Criteria andRegisterSourceGreaterThanOrEqualTo(Byte value) {
+        public Criteria andRegisterSourceGreaterThanOrEqualTo(SourceEnum value) {
             addCriterion("register_source >=", value, "registerSource");
             return (Criteria) this;
         }
 
-        public Criteria andRegisterSourceLessThan(Byte value) {
+        public Criteria andRegisterSourceLessThan(SourceEnum value) {
             addCriterion("register_source <", value, "registerSource");
             return (Criteria) this;
         }
 
-        public Criteria andRegisterSourceLessThanOrEqualTo(Byte value) {
+        public Criteria andRegisterSourceLessThanOrEqualTo(SourceEnum value) {
             addCriterion("register_source <=", value, "registerSource");
             return (Criteria) this;
         }
 
-        public Criteria andRegisterSourceIn(List<Byte> values) {
+        public Criteria andRegisterSourceIn(List<SourceEnum> values) {
             addCriterion("register_source in", values, "registerSource");
             return (Criteria) this;
         }
 
-        public Criteria andRegisterSourceNotIn(List<Byte> values) {
+        public Criteria andRegisterSourceNotIn(List<SourceEnum> values) {
             addCriterion("register_source not in", values, "registerSource");
             return (Criteria) this;
         }
 
-        public Criteria andRegisterSourceBetween(Byte value1, Byte value2) {
+        public Criteria andRegisterSourceBetween(SourceEnum value1, SourceEnum value2) {
             addCriterion("register_source between", value1, value2, "registerSource");
             return (Criteria) this;
         }
 
-        public Criteria andRegisterSourceNotBetween(Byte value1, Byte value2) {
+        public Criteria andRegisterSourceNotBetween(SourceEnum value1, SourceEnum value2) {
             addCriterion("register_source not between", value1, value2, "registerSource");
             return (Criteria) this;
         }
@@ -1066,52 +1009,52 @@ public class UserInfoExample {
             return (Criteria) this;
         }
 
-        public Criteria andBelongTypeEqualTo(Byte value) {
+        public Criteria andBelongTypeEqualTo(BelongTypeEnum value) {
             addCriterion("belong_type =", value, "belongType");
             return (Criteria) this;
         }
 
-        public Criteria andBelongTypeNotEqualTo(Byte value) {
+        public Criteria andBelongTypeNotEqualTo(BelongTypeEnum value) {
             addCriterion("belong_type <>", value, "belongType");
             return (Criteria) this;
         }
 
-        public Criteria andBelongTypeGreaterThan(Byte value) {
+        public Criteria andBelongTypeGreaterThan(BelongTypeEnum value) {
             addCriterion("belong_type >", value, "belongType");
             return (Criteria) this;
         }
 
-        public Criteria andBelongTypeGreaterThanOrEqualTo(Byte value) {
+        public Criteria andBelongTypeGreaterThanOrEqualTo(BelongTypeEnum value) {
             addCriterion("belong_type >=", value, "belongType");
             return (Criteria) this;
         }
 
-        public Criteria andBelongTypeLessThan(Byte value) {
+        public Criteria andBelongTypeLessThan(BelongTypeEnum value) {
             addCriterion("belong_type <", value, "belongType");
             return (Criteria) this;
         }
 
-        public Criteria andBelongTypeLessThanOrEqualTo(Byte value) {
+        public Criteria andBelongTypeLessThanOrEqualTo(BelongTypeEnum value) {
             addCriterion("belong_type <=", value, "belongType");
             return (Criteria) this;
         }
 
-        public Criteria andBelongTypeIn(List<Byte> values) {
+        public Criteria andBelongTypeIn(List<BelongTypeEnum> values) {
             addCriterion("belong_type in", values, "belongType");
             return (Criteria) this;
         }
 
-        public Criteria andBelongTypeNotIn(List<Byte> values) {
+        public Criteria andBelongTypeNotIn(List<BelongTypeEnum> values) {
             addCriterion("belong_type not in", values, "belongType");
             return (Criteria) this;
         }
 
-        public Criteria andBelongTypeBetween(Byte value1, Byte value2) {
+        public Criteria andBelongTypeBetween(BelongTypeEnum value1, BelongTypeEnum value2) {
             addCriterion("belong_type between", value1, value2, "belongType");
             return (Criteria) this;
         }
 
-        public Criteria andBelongTypeNotBetween(Byte value1, Byte value2) {
+        public Criteria andBelongTypeNotBetween(BelongTypeEnum value1, BelongTypeEnum value2) {
             addCriterion("belong_type not between", value1, value2, "belongType");
             return (Criteria) this;
         }
@@ -1196,52 +1139,52 @@ public class UserInfoExample {
             return (Criteria) this;
         }
 
-        public Criteria andDeviceTypeEqualTo(Byte value) {
+        public Criteria andDeviceTypeEqualTo(DeviceTypeEnum value) {
             addCriterion("device_type =", value, "deviceType");
             return (Criteria) this;
         }
 
-        public Criteria andDeviceTypeNotEqualTo(Byte value) {
+        public Criteria andDeviceTypeNotEqualTo(DeviceTypeEnum value) {
             addCriterion("device_type <>", value, "deviceType");
             return (Criteria) this;
         }
 
-        public Criteria andDeviceTypeGreaterThan(Byte value) {
+        public Criteria andDeviceTypeGreaterThan(DeviceTypeEnum value) {
             addCriterion("device_type >", value, "deviceType");
             return (Criteria) this;
         }
 
-        public Criteria andDeviceTypeGreaterThanOrEqualTo(Byte value) {
+        public Criteria andDeviceTypeGreaterThanOrEqualTo(DeviceTypeEnum value) {
             addCriterion("device_type >=", value, "deviceType");
             return (Criteria) this;
         }
 
-        public Criteria andDeviceTypeLessThan(Byte value) {
+        public Criteria andDeviceTypeLessThan(DeviceTypeEnum value) {
             addCriterion("device_type <", value, "deviceType");
             return (Criteria) this;
         }
 
-        public Criteria andDeviceTypeLessThanOrEqualTo(Byte value) {
+        public Criteria andDeviceTypeLessThanOrEqualTo(DeviceTypeEnum value) {
             addCriterion("device_type <=", value, "deviceType");
             return (Criteria) this;
         }
 
-        public Criteria andDeviceTypeIn(List<Byte> values) {
+        public Criteria andDeviceTypeIn(List<DeviceTypeEnum> values) {
             addCriterion("device_type in", values, "deviceType");
             return (Criteria) this;
         }
 
-        public Criteria andDeviceTypeNotIn(List<Byte> values) {
+        public Criteria andDeviceTypeNotIn(List<DeviceTypeEnum> values) {
             addCriterion("device_type not in", values, "deviceType");
             return (Criteria) this;
         }
 
-        public Criteria andDeviceTypeBetween(Byte value1, Byte value2) {
+        public Criteria andDeviceTypeBetween(DeviceTypeEnum value1, DeviceTypeEnum value2) {
             addCriterion("device_type between", value1, value2, "deviceType");
             return (Criteria) this;
         }
 
-        public Criteria andDeviceTypeNotBetween(Byte value1, Byte value2) {
+        public Criteria andDeviceTypeNotBetween(DeviceTypeEnum value1, DeviceTypeEnum value2) {
             addCriterion("device_type not between", value1, value2, "deviceType");
             return (Criteria) this;
         }
@@ -1566,52 +1509,52 @@ public class UserInfoExample {
             return (Criteria) this;
         }
 
-        public Criteria andUserStatusEqualTo(Byte value) {
+        public Criteria andUserStatusEqualTo(BelongTypeEnum value) {
             addCriterion("user_status =", value, "userStatus");
             return (Criteria) this;
         }
 
-        public Criteria andUserStatusNotEqualTo(Byte value) {
+        public Criteria andUserStatusNotEqualTo(BelongTypeEnum value) {
             addCriterion("user_status <>", value, "userStatus");
             return (Criteria) this;
         }
 
-        public Criteria andUserStatusGreaterThan(Byte value) {
+        public Criteria andUserStatusGreaterThan(BelongTypeEnum value) {
             addCriterion("user_status >", value, "userStatus");
             return (Criteria) this;
         }
 
-        public Criteria andUserStatusGreaterThanOrEqualTo(Byte value) {
+        public Criteria andUserStatusGreaterThanOrEqualTo(BelongTypeEnum value) {
             addCriterion("user_status >=", value, "userStatus");
             return (Criteria) this;
         }
 
-        public Criteria andUserStatusLessThan(Byte value) {
+        public Criteria andUserStatusLessThan(BelongTypeEnum value) {
             addCriterion("user_status <", value, "userStatus");
             return (Criteria) this;
         }
 
-        public Criteria andUserStatusLessThanOrEqualTo(Byte value) {
+        public Criteria andUserStatusLessThanOrEqualTo(BelongTypeEnum value) {
             addCriterion("user_status <=", value, "userStatus");
             return (Criteria) this;
         }
 
-        public Criteria andUserStatusIn(List<Byte> values) {
+        public Criteria andUserStatusIn(List<BelongTypeEnum> values) {
             addCriterion("user_status in", values, "userStatus");
             return (Criteria) this;
         }
 
-        public Criteria andUserStatusNotIn(List<Byte> values) {
+        public Criteria andUserStatusNotIn(List<BelongTypeEnum> values) {
             addCriterion("user_status not in", values, "userStatus");
             return (Criteria) this;
         }
 
-        public Criteria andUserStatusBetween(Byte value1, Byte value2) {
+        public Criteria andUserStatusBetween(BelongTypeEnum value1, BelongTypeEnum value2) {
             addCriterion("user_status between", value1, value2, "userStatus");
             return (Criteria) this;
         }
 
-        public Criteria andUserStatusNotBetween(Byte value1, Byte value2) {
+        public Criteria andUserStatusNotBetween(BelongTypeEnum value1, BelongTypeEnum value2) {
             addCriterion("user_status not between", value1, value2, "userStatus");
             return (Criteria) this;
         }
@@ -1992,14 +1935,10 @@ public class UserInfoExample {
      * This class corresponds to the database table user_info
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated do_not_delete_during_merge Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated do_not_delete_during_merge Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated do_not_delete_during_merge Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public static class Criteria extends GeneratedCriteria {
 
@@ -2013,14 +1952,10 @@ public class UserInfoExample {
      * This class corresponds to the database table user_info
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public static class Criterion {
         private String condition;

@@ -1,5 +1,8 @@
 package com.my.blog.website.model.Vo;
 
+import com.my.blog.website.Enum.BelongTypeEnum;
+import com.my.blog.website.Enum.DeviceTypeEnum;
+import com.my.blog.website.Enum.SourceEnum;
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -9,14 +12,10 @@ public class UserInfo {
      * This field corresponds to the database column user_info.id
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     private Long id;
 
@@ -25,14 +24,10 @@ public class UserInfo {
      * This field corresponds to the database column user_info.real_name
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     private String realName;
 
@@ -41,14 +36,10 @@ public class UserInfo {
      * This field corresponds to the database column user_info.user_name
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     private String userName;
 
@@ -57,14 +48,10 @@ public class UserInfo {
      * This field corresponds to the database column user_info.phone_number
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     private String phoneNumber;
 
@@ -73,14 +60,10 @@ public class UserInfo {
      * This field corresponds to the database column user_info.wechat_id
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     private String wechatId;
 
@@ -89,14 +72,10 @@ public class UserInfo {
      * This field corresponds to the database column user_info.wechat_id_2
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     private String wechatId2;
 
@@ -105,14 +84,10 @@ public class UserInfo {
      * This field corresponds to the database column user_info.qq
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     private String qq;
 
@@ -121,14 +96,10 @@ public class UserInfo {
      * This field corresponds to the database column user_info.weibo
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     private String weibo;
 
@@ -137,14 +108,10 @@ public class UserInfo {
      * This field corresponds to the database column user_info.passwd
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     private String passwd;
 
@@ -153,14 +120,10 @@ public class UserInfo {
      * This field corresponds to the database column user_info.sexy
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     private Byte sexy;
 
@@ -169,46 +132,34 @@ public class UserInfo {
      * This field corresponds to the database column user_info.register_source
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
-    private Byte registerSource;
+    private SourceEnum registerSource;
 
     /**
      * This field was generated by MyBatis Generator.
      * This field corresponds to the database column user_info.belong_type
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
-    private Byte belongType;
+    private BelongTypeEnum belongType;
 
     /**
      * This field was generated by MyBatis Generator.
      * This field corresponds to the database column user_info.register_ip
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     private String registerIp;
 
@@ -217,30 +168,22 @@ public class UserInfo {
      * This field corresponds to the database column user_info.device_type
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
-    private Byte deviceType;
+    private DeviceTypeEnum deviceType;
 
     /**
      * This field was generated by MyBatis Generator.
      * This field corresponds to the database column user_info.score
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     private BigDecimal score;
 
@@ -249,14 +192,10 @@ public class UserInfo {
      * This field corresponds to the database column user_info.head_logo_md5
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     private String headLogoMd5;
 
@@ -265,14 +204,10 @@ public class UserInfo {
      * This field corresponds to the database column user_info.update_time
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     private Date updateTime;
 
@@ -281,14 +216,10 @@ public class UserInfo {
      * This field corresponds to the database column user_info.create_time
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     private Date createTime;
 
@@ -297,14 +228,10 @@ public class UserInfo {
      * This field corresponds to the database column user_info.age_group_type
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     private Byte ageGroupType;
 
@@ -313,30 +240,22 @@ public class UserInfo {
      * This field corresponds to the database column user_info.user_status
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
-    private Byte userStatus;
+    private BelongTypeEnum userStatus;
 
     /**
      * This field was generated by MyBatis Generator.
      * This field corresponds to the database column user_info.province_id
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     private Integer provinceId;
 
@@ -345,14 +264,10 @@ public class UserInfo {
      * This field corresponds to the database column user_info.city_id
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     private Integer cityId;
 
@@ -361,14 +276,10 @@ public class UserInfo {
      * This field corresponds to the database column user_info.user_idCard_number
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     private String userIdcardNumber;
 
@@ -377,14 +288,10 @@ public class UserInfo {
      * This field corresponds to the database column user_info.authen_time
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     private Date authenTime;
 
@@ -393,14 +300,10 @@ public class UserInfo {
      * This field corresponds to the database column user_info.grade
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     private Integer grade;
 
@@ -409,14 +312,10 @@ public class UserInfo {
      * This field corresponds to the database column user_info.integral_score
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     private BigDecimal integralScore;
 
@@ -427,14 +326,10 @@ public class UserInfo {
      * @return the value of user_info.id
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public Long getId() {
         return id;
@@ -447,14 +342,10 @@ public class UserInfo {
      * @param id the value for user_info.id
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public void setId(Long id) {
         this.id = id;
@@ -467,14 +358,10 @@ public class UserInfo {
      * @return the value of user_info.real_name
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public String getRealName() {
         return realName;
@@ -487,14 +374,10 @@ public class UserInfo {
      * @param realName the value for user_info.real_name
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public void setRealName(String realName) {
         this.realName = realName == null ? null : realName.trim();
@@ -507,14 +390,10 @@ public class UserInfo {
      * @return the value of user_info.user_name
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public String getUserName() {
         return userName;
@@ -527,14 +406,10 @@ public class UserInfo {
      * @param userName the value for user_info.user_name
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public void setUserName(String userName) {
         this.userName = userName == null ? null : userName.trim();
@@ -547,14 +422,10 @@ public class UserInfo {
      * @return the value of user_info.phone_number
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public String getPhoneNumber() {
         return phoneNumber;
@@ -567,14 +438,10 @@ public class UserInfo {
      * @param phoneNumber the value for user_info.phone_number
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber == null ? null : phoneNumber.trim();
@@ -587,14 +454,10 @@ public class UserInfo {
      * @return the value of user_info.wechat_id
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public String getWechatId() {
         return wechatId;
@@ -607,14 +470,10 @@ public class UserInfo {
      * @param wechatId the value for user_info.wechat_id
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public void setWechatId(String wechatId) {
         this.wechatId = wechatId == null ? null : wechatId.trim();
@@ -627,14 +486,10 @@ public class UserInfo {
      * @return the value of user_info.wechat_id_2
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public String getWechatId2() {
         return wechatId2;
@@ -647,14 +502,10 @@ public class UserInfo {
      * @param wechatId2 the value for user_info.wechat_id_2
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public void setWechatId2(String wechatId2) {
         this.wechatId2 = wechatId2 == null ? null : wechatId2.trim();
@@ -667,14 +518,10 @@ public class UserInfo {
      * @return the value of user_info.qq
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public String getQq() {
         return qq;
@@ -687,14 +534,10 @@ public class UserInfo {
      * @param qq the value for user_info.qq
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public void setQq(String qq) {
         this.qq = qq == null ? null : qq.trim();
@@ -707,14 +550,10 @@ public class UserInfo {
      * @return the value of user_info.weibo
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public String getWeibo() {
         return weibo;
@@ -727,14 +566,10 @@ public class UserInfo {
      * @param weibo the value for user_info.weibo
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public void setWeibo(String weibo) {
         this.weibo = weibo == null ? null : weibo.trim();
@@ -747,14 +582,10 @@ public class UserInfo {
      * @return the value of user_info.passwd
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public String getPasswd() {
         return passwd;
@@ -767,14 +598,10 @@ public class UserInfo {
      * @param passwd the value for user_info.passwd
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public void setPasswd(String passwd) {
         this.passwd = passwd == null ? null : passwd.trim();
@@ -787,14 +614,10 @@ public class UserInfo {
      * @return the value of user_info.sexy
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public Byte getSexy() {
         return sexy;
@@ -807,14 +630,10 @@ public class UserInfo {
      * @param sexy the value for user_info.sexy
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public void setSexy(Byte sexy) {
         this.sexy = sexy;
@@ -827,16 +646,12 @@ public class UserInfo {
      * @return the value of user_info.register_source
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
-    public Byte getRegisterSource() {
+    public SourceEnum getRegisterSource() {
         return registerSource;
     }
 
@@ -847,16 +662,12 @@ public class UserInfo {
      * @param registerSource the value for user_info.register_source
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
-    public void setRegisterSource(Byte registerSource) {
+    public void setRegisterSource(SourceEnum registerSource) {
         this.registerSource = registerSource;
     }
 
@@ -867,16 +678,12 @@ public class UserInfo {
      * @return the value of user_info.belong_type
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
-    public Byte getBelongType() {
+    public BelongTypeEnum getBelongType() {
         return belongType;
     }
 
@@ -887,16 +694,12 @@ public class UserInfo {
      * @param belongType the value for user_info.belong_type
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
-    public void setBelongType(Byte belongType) {
+    public void setBelongType(BelongTypeEnum belongType) {
         this.belongType = belongType;
     }
 
@@ -907,14 +710,10 @@ public class UserInfo {
      * @return the value of user_info.register_ip
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public String getRegisterIp() {
         return registerIp;
@@ -927,14 +726,10 @@ public class UserInfo {
      * @param registerIp the value for user_info.register_ip
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public void setRegisterIp(String registerIp) {
         this.registerIp = registerIp == null ? null : registerIp.trim();
@@ -947,16 +742,12 @@ public class UserInfo {
      * @return the value of user_info.device_type
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
-    public Byte getDeviceType() {
+    public DeviceTypeEnum getDeviceType() {
         return deviceType;
     }
 
@@ -967,16 +758,12 @@ public class UserInfo {
      * @param deviceType the value for user_info.device_type
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
-    public void setDeviceType(Byte deviceType) {
+    public void setDeviceType(DeviceTypeEnum deviceType) {
         this.deviceType = deviceType;
     }
 
@@ -987,14 +774,10 @@ public class UserInfo {
      * @return the value of user_info.score
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public BigDecimal getScore() {
         return score;
@@ -1007,14 +790,10 @@ public class UserInfo {
      * @param score the value for user_info.score
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public void setScore(BigDecimal score) {
         this.score = score;
@@ -1027,14 +806,10 @@ public class UserInfo {
      * @return the value of user_info.head_logo_md5
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public String getHeadLogoMd5() {
         return headLogoMd5;
@@ -1047,14 +822,10 @@ public class UserInfo {
      * @param headLogoMd5 the value for user_info.head_logo_md5
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public void setHeadLogoMd5(String headLogoMd5) {
         this.headLogoMd5 = headLogoMd5 == null ? null : headLogoMd5.trim();
@@ -1067,14 +838,10 @@ public class UserInfo {
      * @return the value of user_info.update_time
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public Date getUpdateTime() {
         return updateTime;
@@ -1087,14 +854,10 @@ public class UserInfo {
      * @param updateTime the value for user_info.update_time
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
@@ -1107,14 +870,10 @@ public class UserInfo {
      * @return the value of user_info.create_time
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public Date getCreateTime() {
         return createTime;
@@ -1127,14 +886,10 @@ public class UserInfo {
      * @param createTime the value for user_info.create_time
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
@@ -1147,14 +902,10 @@ public class UserInfo {
      * @return the value of user_info.age_group_type
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public Byte getAgeGroupType() {
         return ageGroupType;
@@ -1167,14 +918,10 @@ public class UserInfo {
      * @param ageGroupType the value for user_info.age_group_type
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public void setAgeGroupType(Byte ageGroupType) {
         this.ageGroupType = ageGroupType;
@@ -1187,16 +934,12 @@ public class UserInfo {
      * @return the value of user_info.user_status
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
-    public Byte getUserStatus() {
+    public BelongTypeEnum getUserStatus() {
         return userStatus;
     }
 
@@ -1207,16 +950,12 @@ public class UserInfo {
      * @param userStatus the value for user_info.user_status
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
-    public void setUserStatus(Byte userStatus) {
+    public void setUserStatus(BelongTypeEnum userStatus) {
         this.userStatus = userStatus;
     }
 
@@ -1227,14 +966,10 @@ public class UserInfo {
      * @return the value of user_info.province_id
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public Integer getProvinceId() {
         return provinceId;
@@ -1247,14 +982,10 @@ public class UserInfo {
      * @param provinceId the value for user_info.province_id
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public void setProvinceId(Integer provinceId) {
         this.provinceId = provinceId;
@@ -1267,14 +998,10 @@ public class UserInfo {
      * @return the value of user_info.city_id
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public Integer getCityId() {
         return cityId;
@@ -1287,14 +1014,10 @@ public class UserInfo {
      * @param cityId the value for user_info.city_id
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public void setCityId(Integer cityId) {
         this.cityId = cityId;
@@ -1307,14 +1030,10 @@ public class UserInfo {
      * @return the value of user_info.user_idCard_number
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public String getUserIdcardNumber() {
         return userIdcardNumber;
@@ -1327,14 +1046,10 @@ public class UserInfo {
      * @param userIdcardNumber the value for user_info.user_idCard_number
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public void setUserIdcardNumber(String userIdcardNumber) {
         this.userIdcardNumber = userIdcardNumber == null ? null : userIdcardNumber.trim();
@@ -1347,14 +1062,10 @@ public class UserInfo {
      * @return the value of user_info.authen_time
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public Date getAuthenTime() {
         return authenTime;
@@ -1367,14 +1078,10 @@ public class UserInfo {
      * @param authenTime the value for user_info.authen_time
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public void setAuthenTime(Date authenTime) {
         this.authenTime = authenTime;
@@ -1387,14 +1094,10 @@ public class UserInfo {
      * @return the value of user_info.grade
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public Integer getGrade() {
         return grade;
@@ -1407,14 +1110,10 @@ public class UserInfo {
      * @param grade the value for user_info.grade
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public void setGrade(Integer grade) {
         this.grade = grade;
@@ -1427,14 +1126,10 @@ public class UserInfo {
      * @return the value of user_info.integral_score
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public BigDecimal getIntegralScore() {
         return integralScore;
@@ -1447,14 +1142,10 @@ public class UserInfo {
      * @param integralScore the value for user_info.integral_score
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     public void setIntegralScore(BigDecimal integralScore) {
         this.integralScore = integralScore;
@@ -1465,14 +1156,10 @@ public class UserInfo {
      * This method corresponds to the database table user_info
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     @Override
     public boolean equals(Object that) {
@@ -1519,14 +1206,10 @@ public class UserInfo {
      * This method corresponds to the database table user_info
      *
 <<<<<<< HEAD
-<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
-=======
-     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
->>>>>>> parent of 68a0905... update
      */
     @Override
     public int hashCode() {
