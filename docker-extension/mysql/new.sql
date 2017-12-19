@@ -82,3 +82,31 @@ CREATE TABLE `second_hand_info` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC KEY_BLOCK_SIZE=4 COMMENT='二手物品表';
 
+
+CREATE TABLE `second_hand_type` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+  `name` varchar(128) DEFAULT NULL COMMENT '类目名称',
+  `pid` bigint(20) DEFAULT NULL COMMENT '父级类目',
+  `logoPicUrl` varchar(500) DEFAULT NULL COMMENT '图标url',
+  `create_time` datetime DEFAULT NULL COMMENT '系统创建时间',
+  `update_time` datetime DEFAULT NULL COMMENT '系统修改时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC KEY_BLOCK_SIZE=4 COMMENT='二手类目表';
+
+CREATE TABLE `ride_sharing_info` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+  `tittle` varchar(128) DEFAULT NULL COMMENT '标题',
+  `phone_number` varchar(20) DEFAULT NULL COMMENT '手机号',
+  `pic_url` varchar(500) DEFAULT NULL COMMENT '大图url（多个用逗号隔开）',
+  `logoPicUrl` varchar(500) DEFAULT NULL COMMENT '图标url',
+  `desc` longtext COMMENT '详情()',
+  `read_number` int(11) DEFAULT NULL COMMENT '阅读数量',
+  `source` varchar(100) DEFAULT NULL COMMENT '来源(抓取,录入)',
+  `status` tinyint(4) DEFAULT NULL COMMENT '状态（0启用、1停用）',
+  `recommend_status` tinyint(4) DEFAULT NULL COMMENT '推荐状态(0不推荐,1推荐)',
+  `type` varchar(100) DEFAULT NULL COMMENT '类型(人找车,车找人)',
+  `create_time` datetime DEFAULT NULL COMMENT '系统创建时间',
+  `update_time` datetime DEFAULT NULL COMMENT '系统修改时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC KEY_BLOCK_SIZE=4 COMMENT='顺风车信息表';
+
