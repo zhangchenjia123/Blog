@@ -11,10 +11,14 @@ public interface UserInfoMapper {
      * This method corresponds to the database table user_info
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
+=======
+     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
+>>>>>>> parent of 68a0905... update
      */
     int countByExample(UserInfoExample example);
 
@@ -23,10 +27,14 @@ public interface UserInfoMapper {
      * This method corresponds to the database table user_info
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
+=======
+     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
+>>>>>>> parent of 68a0905... update
      */
     int deleteByExample(UserInfoExample example);
 
@@ -35,10 +43,14 @@ public interface UserInfoMapper {
      * This method corresponds to the database table user_info
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
+=======
+     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
+>>>>>>> parent of 68a0905... update
      */
     int deleteByPrimaryKey(Long id);
 
@@ -47,10 +59,14 @@ public interface UserInfoMapper {
      * This method corresponds to the database table user_info
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
+=======
+     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
+>>>>>>> parent of 68a0905... update
      */
     int insert(UserInfo record);
 
@@ -59,10 +75,14 @@ public interface UserInfoMapper {
      * This method corresponds to the database table user_info
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
+=======
+     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
+>>>>>>> parent of 68a0905... update
      */
     int insertSelective(UserInfo record);
 
@@ -71,10 +91,14 @@ public interface UserInfoMapper {
      * This method corresponds to the database table user_info
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
+=======
+     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
+>>>>>>> parent of 68a0905... update
      */
     List<UserInfo> selectByExample(UserInfoExample example);
 
@@ -83,10 +107,14 @@ public interface UserInfoMapper {
      * This method corresponds to the database table user_info
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
+=======
+     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
+>>>>>>> parent of 68a0905... update
      */
     UserInfo selectByPrimaryKey(Long id);
 
@@ -95,10 +123,14 @@ public interface UserInfoMapper {
      * This method corresponds to the database table user_info
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
+=======
+     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
+>>>>>>> parent of 68a0905... update
      */
     int updateByExampleSelective(@Param("record") UserInfo record, @Param("example") UserInfoExample example);
 
@@ -107,10 +139,14 @@ public interface UserInfoMapper {
      * This method corresponds to the database table user_info
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
+=======
+     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
+>>>>>>> parent of 68a0905... update
      */
     int updateByExample(@Param("record") UserInfo record, @Param("example") UserInfoExample example);
 
@@ -119,10 +155,14 @@ public interface UserInfoMapper {
      * This method corresponds to the database table user_info
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
+=======
+     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
+>>>>>>> parent of 68a0905... update
      */
     int updateByPrimaryKeySelective(UserInfo record);
 
@@ -131,10 +171,14 @@ public interface UserInfoMapper {
      * This method corresponds to the database table user_info
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @mbggenerated Tue Dec 19 17:47:27 CST 2017
 =======
      * @mbggenerated Tue Dec 19 09:52:04 CST 2017
 >>>>>>> zhichuang/master
+=======
+     * @mbggenerated Fri Dec 15 14:42:45 CST 2017
+>>>>>>> parent of 68a0905... update
      */
     int updateByPrimaryKey(UserInfo record);
 }

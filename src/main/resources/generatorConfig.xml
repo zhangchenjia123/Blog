@@ -45,42 +45,7 @@
         <!-- 要生成哪些表-->
         <table tableName="user_info">
             <generatedKey column="id" sqlStatement="Mysql" type="post" identity="true"/>
-            <columnOverride column="register_source" javaType="com.my.blog.website.Enum.SourceEnum"/>
-            <columnOverride column="device_type" javaType="com.my.blog.website.Enum.DeviceTypeEnum"/>
-            <columnOverride column="belong_type" javaType="com.my.blog.website.Enum.BelongTypeEnum"/>
-            <columnOverride column="user_status" javaType="com.my.blog.website.Enum.BelongTypeEnum"/>
         </table>
-
-        <table tableName="news_info">
-            <generatedKey column="id" sqlStatement="Mysql" type="post" identity="true"/>
-            <columnOverride column="source" javaType="com.my.blog.website.Enum.SourceEnum"/>
-            <columnOverride column="recommend_status" javaType="com.my.blog.website.Enum.RecommendStatusEnum"/>
-            <columnOverride column="status" javaType="com.my.blog.website.Enum.IsUseEnum"/>
-            <columnOverride column="type" javaType="com.my.blog.website.Enum.NewsTypeEnum"/>
-        </table>
-
-        <table tableName="comments_info">
-            <generatedKey column="id" sqlStatement="Mysql" type="post" identity="true"/>
-            <columnOverride column="type" javaType="com.my.blog.website.Enum.CommentsTypeEnum"/>
-            <columnOverride column="status" javaType="com.my.blog.website.Enum.IsDeleteEnum"/>
-        </table>
-
-        <table tableName="second_hand_info">
-            <columnOverride column="recommend_status" javaType="com.my.blog.website.Enum.RecommendStatusEnum"/>
-            <columnOverride column="status" javaType="com.my.blog.website.Enum.IsUseEnum"/>
-        </table>
-
-        <table tableName="second_hand_type">
-            <generatedKey column="id" sqlStatement="Mysql" type="post" identity="true"/>
-        </table>
-
-        <table tableName="ride_sharing_info">
-            <columnOverride column="source" javaType="com.my.blog.website.Enum.SourceEnum"/>
-            <columnOverride column="recommend_status" javaType="com.my.blog.website.Enum.RecommendStatusEnum"/>
-            <columnOverride column="status" javaType="com.my.blog.website.Enum.IsUseEnum"/>
-            <columnOverride column="type" javaType="com.my.blog.website.Enum.IsUseEnum"/>
-        </table>
-
 
     </context>
 </generatorConfiguration>
