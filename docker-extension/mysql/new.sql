@@ -99,7 +99,11 @@ CREATE TABLE `ride_sharing_info` (
   `phone_number` varchar(20) DEFAULT NULL COMMENT '手机号',
   `pic_url` varchar(500) DEFAULT NULL COMMENT '大图url（多个用逗号隔开）',
   `logoPicUrl` varchar(500) DEFAULT NULL COMMENT '图标url',
+<<<<<<< HEAD
   `desc` varchar(5000) COMMENT '详情()',
+=======
+  `desc` longtext COMMENT '详情()',
+>>>>>>> zhichuang/master
   `read_number` int(11) DEFAULT NULL COMMENT '阅读数量',
   `source` varchar(100) DEFAULT NULL COMMENT '来源(抓取,录入)',
   `status` tinyint(4) DEFAULT NULL COMMENT '状态（0启用、1停用）',
