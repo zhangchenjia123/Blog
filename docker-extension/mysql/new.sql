@@ -1,4 +1,4 @@
---此文件需最后执行
+-- 此文件需最后执行
 -- 用户表
 CREATE TABLE `user_info` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
@@ -36,7 +36,7 @@ CREATE TABLE `news_info` (
   `tittle` varchar(128) DEFAULT NULL COMMENT '商品名称',
   `pic_url` varchar(500) DEFAULT NULL COMMENT '大图url（多个用逗号隔开）',
   `logoPicUrl` varchar(500) DEFAULT NULL COMMENT '图标url',
-  `desc` varchar(5000) COMMENT '详情()',
+  `desc_info` varchar(5000) COMMENT '详情()',
   `read_number` int(11) DEFAULT NULL COMMENT '阅读数量',
   `source` varchar(100) DEFAULT NULL COMMENT '来源',
   `status` tinyint(4) DEFAULT NULL COMMENT '状态（0启用、1停用）',
@@ -51,7 +51,7 @@ CREATE TABLE `news_info` (
 CREATE TABLE `comments_info` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键ID',
   `tittle` varchar(128) DEFAULT NULL COMMENT '标题名称',
-  `desc` varchar(5000) COMMENT '详情()',
+  `desc_info` varchar(5000) COMMENT '详情()',
   `user_id` bigint(20) DEFAULT NULL COMMENT '用户id',
   `pic_url` varchar(500) DEFAULT NULL COMMENT '大图url（多个用逗号隔开）',
   `approve_number` int(11) DEFAULT NULL COMMENT '点赞数量',
@@ -72,7 +72,7 @@ CREATE TABLE `second_hand_info` (
   `pic_url` varchar(500) DEFAULT NULL COMMENT '大图url（多个用逗号隔开）',
   `logoPicUrl` varchar(500) DEFAULT NULL COMMENT '图标url',
   `user_id` bigint(20) DEFAULT NULL COMMENT '用户id',
-  `desc` varchar(5000) COMMENT '详情()',
+  `desc_info` varchar(5000) COMMENT '详情()',
   `read_number` int(11) DEFAULT NULL COMMENT '阅读数量',
   `status` tinyint(4) DEFAULT NULL COMMENT '状态（0未删除、1删除）',
   `recommend_status` tinyint(4) DEFAULT NULL COMMENT '展示状态(0展示,1不展示)',
@@ -99,7 +99,7 @@ CREATE TABLE `ride_sharing_info` (
   `phone_number` varchar(20) DEFAULT NULL COMMENT '手机号',
   `pic_url` varchar(500) DEFAULT NULL COMMENT '大图url（多个用逗号隔开）',
   `logoPicUrl` varchar(500) DEFAULT NULL COMMENT '图标url',
-  `desc` varchar(5000) COMMENT '详情()',
+  `desc_info` varchar(5000) COMMENT '详情()',
   `read_number` int(11) DEFAULT NULL COMMENT '阅读数量',
   `source` varchar(100) DEFAULT NULL COMMENT '来源(抓取,录入)',
   `status` tinyint(4) DEFAULT NULL COMMENT '状态（0启用、1停用）',
