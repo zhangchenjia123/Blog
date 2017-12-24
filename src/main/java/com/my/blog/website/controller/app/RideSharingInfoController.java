@@ -59,6 +59,47 @@ public class RideSharingInfoController extends BaseController {
         return RestResponseBo.ok();
     }
 
+    @GetMapping(value = "/update")
+    public String update() {
+        return "ride_sharing/update";
+    }
+
+    @PostMapping(value = "update")
+    @ResponseBody
+    public RestResponseBo doUpdate(RideSharingInfo rideSharingInfo,HttpServletRequest request) {
+
+        try {
+            rideSharingInfoService.updateRideSharingInfo(rideSharingInfo);
+        } catch (Exception e) {
+            String msg = "顺风车信息修改失败";
+            if (e instanceof TipException) {
+                msg = e.getMessage();
+            } else {
+                LOGGER.error(msg, e);
+            }
+            return RestResponseBo.fail(msg);
+        }
+        return RestResponseBo.ok();
+    }
+
+    @RequestMapping(value = "update")
+    @ResponseBody
+    public RestResponseBo doDelete(RideSharingInfo rideSharingInfo,HttpServletRequest request) {
+
+        try {
+            rideSharingInfoService.deleteRideSharingInfo(rideSharingInfo);
+        } catch (Exception e) {
+            String msg = "顺风车信息删除失败";
+            if (e instanceof TipException) {
+                msg = e.getMessage();
+            } else {
+                LOGGER.error(msg, e);
+            }
+            return RestResponseBo.fail(msg);
+        }
+        return RestResponseBo.ok();
+    }
+
     @RequestMapping(value = "get")
     @ResponseBody
     public String doGet(RideSharingInfo rideSharingInfo,HttpServletRequest request) {

@@ -35,6 +35,16 @@ public class RideSharingInfoImpl implements IRideSharingInfoService {
     }
 
     @Override
+    public void updateRideSharingInfo(RideSharingInfo rideSharingInfo) {
+        rideSharingInfoMapper.updateByPrimaryKeySelective(rideSharingInfo);
+    }
+
+    @Override
+    public void deleteRideSharingInfo(RideSharingInfo rideSharingInfo) {
+        rideSharingInfoMapper.deleteByPrimaryKey(rideSharingInfo.getId());
+    }
+
+    @Override
     public List<RideSharingInfo> getRideSharingInfo(RideSharingInfo rideSharingInfo) {
         RideSharingInfoExample example = new RideSharingInfoExample();
         RideSharingInfoExample.Criteria criteria= example.createCriteria();
@@ -45,8 +55,8 @@ public class RideSharingInfoImpl implements IRideSharingInfoService {
             criteria.andTittleEqualTo(rideSharingInfo.getTittle());
         if(rideSharingInfo.getPhoneNumber() != null)
             criteria.andPhoneNumberEqualTo(rideSharingInfo.getPhoneNumber());
-        if(rideSharingInfo.getDesc() != null)
-            criteria.andDescEqualTo(rideSharingInfo.getDesc());
+        if(rideSharingInfo.getDescInfo() != null)
+            criteria.andDescInfoEqualTo(rideSharingInfo.getDescInfo());
         if(rideSharingInfo.getStatus() != null)
             criteria.andStatusEqualTo(rideSharingInfo.getStatus());
         return rideSharingInfoMapper.selectByExample(example);

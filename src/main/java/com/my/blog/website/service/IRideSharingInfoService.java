@@ -19,5 +19,15 @@ public interface IRideSharingInfoService {
      */
     List<RideSharingInfo> getRideSharingInfo(RideSharingInfo rideSharingInfo);
 
+    /**
+     * 修改顺风车信息
+     */
+    void updateRideSharingInfo(RideSharingInfo rideSharingInfo);
+
+    /**
+     * 删除顺风车信息
+     */
+    void deleteRideSharingInfo(RideSharingInfo rideSharingInfo);
+
 
 }
